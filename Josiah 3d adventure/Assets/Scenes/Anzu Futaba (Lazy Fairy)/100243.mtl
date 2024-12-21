@@ -1,0 +1,43 @@
+ File produced by Open Asset Import Library (http://www.assimp.sf.net)
+ (assimp v3.1.29665513)
+
+newmtl mt_body1302
+kd 1 1 1
+ka 0.2 0.2 0.2
+ks 0.2 0.2 0.2
+ke 0 0 0
+d 1
+Ns 20
+illum 2
+map_Kd tx_body1302170.png
+
+newmtl mt_chr0134_1302_obj
+kd 1 1 1
+ka 0.2 0.2 0.2
+ks 0.2 0.2 0.2
+ke 0 0 0
+d 1
+Ns 20
+illum 2
+map_Kd tx_chr0134_1302_obj019210.png
+
+newmtl mt_chr0134_1302
+kd 1 1 1
+ka 0.2 0.2 0.2
+ks 0.2 0.2 0.2
+ke 0 0 0
+d 1
+Ns 20
+illum 2
+map_Kd tx_chr0134_1302019075.png
+
+newmtl mt_chr0134_1302_mayu
+kd 1 1 1
+ka 0.2 0.2 0.2
+ks 0.2 0.2 0.2
+ke 0 0 0
+d 1
+Ns 20
+illum 2
+map_Kd tx_chr0134_1302019075.png
+

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<COLLADA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <created>2018-08-14T07:14:42.549348-04:00</created>
+    <modified>2018-08-14T07:14:42.549348-04:00</modified>
+  </asset>
+  <library_images>
+    <image id="ctr_mikb004_aball">
+      <init_from>./ctr_mikb004_aball.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kataab_CHM_CLOTH_mat_id" name="kataab_CHM_CLOTH_mat">
+      <instance_effect url="#kataab_CHM_CLOTH_eff_id" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kataab_CHM_CLOTH_eff_id" name="kataab_CHM_CLOTH_eff">
+      <profile_COMMON>
+        <newparam sid="kataab_CHM_CLOTH_surf">
+          <surface type="2D">
+            <init_from>ctr_mikb004_aball</init_from>
+            <format>PNG</format>
+          </surface>
+        </newparam>
+        <newparam sid="kataab_CHM_CLOTH_samp">
+          <sampler2D>
+            <source>kataab_CHM_CLOTH_surf</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+            <mipfilter>LINEAR</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="kataab_CHM_CLOTH_tech">
+          <phong>
+            <diffuse>
+              <texture texture="kataab_CHM_CLOTH_samp" texcoord="uv" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="alphaball_kosi_0_0_geo_id" name="alphaball_kosi_0_0">
+      <mesh>
+        <source id="alphaball_kosi_0_0_Position_id" name="alphaball_kosi_0_0_Position">
+          <float_array id="alphaball_kosi_0_0_Position_array_id" count="12">0.0992038 -0.0008044168 -0.3000007 0.0992038 0.2008076 -0.3000014 0.3008158 0.2008076 -0.3000022 0.3008158 -0.0008044168 -0.3000014</float_array>
+          <technique_common>
+            <accessor source="#alphaball_kosi_0_0_Position_array_id" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="alphaball_kosi_0_0_TexCoord0_id" name="alphaball_kosi_0_0_TexCoord0">
+          <float_array id="alphaball_kosi_0_0_TexCoord0_array_id" count="8">0 1 0 0 1 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#alphaball_kosi_0_0_TexCoord0_array_id" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="alphaball_kosi_0_0_vtx_id">
+          <input semantic="POSITION" source="#alphaball_kosi_0_0_Position_id" />
+        </vertices>
+        <triangles material="Mdl_0_Mtl_kataab_CHM_CLOTH" count="2">
+          <input semantic="VERTEX" source="#alphaball_kosi_0_0_vtx_id" offset="0" />
+          <input semantic="TEXCOORD" source="#alphaball_kosi_0_0_TexCoord0_id" offset="0" set="0" />
+          <p>0 1 2 0 2 3</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="alphaball_kosi_0_0_ctrl_id" name="alphaball_kosi_0_0_ctrl">
+      <skin source="#alphaball_kosi_0_0_geo_id">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="alphaball_kosi_0_0_ctrl_names_id" name="alphaball_kosi_0_0_ctrl_names">
+          <Name_array id="alphaball_kosi_0_0_ctrl_names_array_id" count="2">kl_waki_r_wj n_kataboll_wj</Name_array>
+          <technique_common>
+            <accessor source="#alphaball_kosi_0_0_ctrl_names_array_id" count="2" stride="1">
+              <param name="JOINT" type="Name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="alphaball_kosi_0_0_ctrl_poses_id" name="alphaball_kosi_0_0_ctrl_poses">
+          <float_array id="alphaball_kosi_0_0_ctrl_poses_array_id" count="32">-3.61999E-06 1 -2.14573E-12 -2.950001 3.61999E-06 1.525006E-11 1 0.1600007 1 3.61999E-06 -3.61999E-06 0.1999887 0 0 0 1 1 8.328942E-14 -3.61999E-06 -0.2000109 -1.310438E-11 1 -3.620005E-06 -0.1000027 3.61999E-06 3.620005E-06 1 0.3000004 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#alphaball_kosi_0_0_ctrl_poses_array_id" count="2" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="alphaball_kosi_0_0_ctrl_weights_id" name="alphaball_kosi_0_0_ctrl_weights">
+          <float_array id="alphaball_kosi_0_0_ctrl_weights_array_id" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#alphaball_kosi_0_0_ctrl_weights_array_id" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#alphaball_kosi_0_0_ctrl_names_id" />
+          <input semantic="INV_BIND_MATRIX" source="#alphaball_kosi_0_0_ctrl_poses_id" />
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#alphaball_kosi_0_0_ctrl_names_id" offset="0" />
+          <input semantic="WEIGHT" source="#alphaball_kosi_0_0_ctrl_weights_id" offset="1" />
+          <vcount>1 1 1 1</vcount>
+          <v>1 0 1 0 1 0 1 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="MIKB004ITEM_KATAAB_00_id" name="MIKB004ITEM_KATAAB_00">
+      <node id="kl_waki_r_wj_bone_id" name="kl_waki_r_wj" sid="kl_waki_r_wj" type="JOINT">
+        <translate sid="translate">-0.2 2.95 -0.16</translate>
+        <rotate sid="rotateZ">0 0 1 90.00021</rotate>
+        <rotate sid="rotateY">0 1 0 1.229413E-10</rotate>
+        <rotate sid="rotateX">1 0 0 90.00021</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="n_kataboll_wj_bone_id" name="n_kataboll_wj" sid="n_kataboll_wj" type="JOINT">
+          <translate sid="translate">-2.85 -0.14 0.4</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 -90.00021</rotate>
+          <rotate sid="rotateX">1 0 0 -90.00021</rotate>
+          <scale sid="scale">1 1 1</scale>
+        </node>
+      </node>
+      <node id="alphaball_kosi_0_0_node_id" name="alphaball_kosi_0_0_node" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#alphaball_kosi_0_0_ctrl_id">
+          <skeleton>#kl_waki_r_wj_bone_id</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mdl_0_Mtl_kataab_CHM_CLOTH" target="#kataab_CHM_CLOTH_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MIKB004ITEM_KATAAB_00_id" />
+  </scene>
+</COLLADA>

@@ -1,0 +1,20 @@
+version 1
+nodes
+0 "kl_kosi_etc_wj" -1
+1 "n_kosiboll_wj" 0
+end
+skeleton
+time 0
+0 2.20088E-07 2.2 -8.98479E-12 0 1.5708 0
+1 1 -3.6 0.7 0 -1.5708 0
+end
+triangles
+ctr_mikb004_aball.png
+0 0.8008026 -1.500806 -1.000003 NaN NaN NaN 0 1 1 1 1
+0 0.8008026 -1.299194 -1.000003 NaN NaN NaN 0 0 1 1 1
+0 0.5991906 -1.299194 -1.000003 NaN NaN NaN 1 0 1 1 1
+ctr_mikb004_aball.png
+0 0.8008026 -1.500806 -1.000003 NaN NaN NaN 0 1 1 1 1
+0 0.5991906 -1.299194 -1.000003 NaN NaN NaN 1 0 1 1 1
+0 0.5991906 -1.500806 -1.000003 NaN NaN NaN 1 1 1 1 1
+end
